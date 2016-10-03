@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book title="Theory of Computation">
+    <authors>
+      <author>Michael Sipser</author>
+    </authors>
+    <publisher>Cengage Learning</publisher>
+    <edition>3</edition>
+  </book>
+  <book id="2" title="Artificial Intelligence">
+    <authors>
+      <author>Peter Norvig</author>
+      <author>Stuart Russell</author>
+    </authors>
+    <publisher>Pearson</publisher>
+    <year>2013</year>
+    <edition>3</edition>
+  </book>
+</books>
+
