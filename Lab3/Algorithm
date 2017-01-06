@@ -1,0 +1,45 @@
+Algorithm match(XMLNode XMLnode, int node, int path)
+    int pathMatch, nodeMatch
+    if XPath[path][node] == tag.getName()
+    // query is completed
+        if XPath[path].length == node + 1
+            // each path is completed
+            if XPath.length == path + 1
+                nodeMatch = queries[path][node]
+                pathMatch = path
+                System.out.println(order)
+            else
+                nodeMatch = 0;
+                pathMatch = path + 1;
+        else
+            nodeMatch = node +1;
+            pathMatch = path;
+        // push new stamp into stack
+        stack.push(new Stamp(nodeMatch,pathMatch))
+    else
+        nodeMatch = queries[path][node]
+        pathMatch = path
+        //
+        if(node !=0)
+            match(tag,nodeMatch,pathMatch)
+        else
+            stack.push(new Stamp(nodeMatch,pathMatch))
+
+Algorithm int KMP(char* s, char* p)
+    int i = 0;
+    int j = 0;
+    int sLen = strlen(s);
+    int pLen = strlen(p);
+    while (i < sLen && j < pLen)
+        // j=-1 or current string match, both i and j ++
+        if (j == -1 || s[i] == p[j])
+            i++;
+            j++;
+        else
+            // j!=-1 and current string match failed, only change j
+            // next[j] is j's next value
+            j = next[j];
+    if j == pLen
+        return i - j;
+    else
+        return -1;
